@@ -178,7 +178,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========== 7. PAGE LOAD ANIMATION ==========
+    // ========== 7. BACK TO TOP BUTTON ==========
+    /**
+     * Implementa botão de voltar ao topo que aparece ao rolar para baixo
+     */
+    const initBackToTop = () => {
+        const backToTopButton = document.getElementById('backToTop');
+        
+        const handleScroll = () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        };
+        
+        // Mostra/esconde botão ao rolar
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        
+        // Ação do clique
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    };
+    
+    initBackToTop();
+    
+    // ========== 8. PAGE LOAD ANIMATION ==========
     /**
      * Adiciona uma classe ao body quando a página é completamente carregada
      */
@@ -186,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('page-loaded');
     });
     
-    // ========== 8. ACCESSIBILITY ENHANCEMENTS ==========
+    // ========== 9. ACCESSIBILITY ENHANCEMENTS ==========
     /**
      * Melhora a acessibilidade do site
      */
@@ -219,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     initAccessibility();
     
-    // ========== 9. PERFORMANCE MONITORING (Opcional) ==========
+    // ========== 10. PERFORMANCE MONITORING (Opcional) ==========
     /**
      * Monitora a performance do carregamento da página
      */
@@ -242,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ========== 10. UTILITIES ==========
+    // ========== 11. UTILITIES ==========
     /**
      * Funções utilitárias para uso futuro
      */
