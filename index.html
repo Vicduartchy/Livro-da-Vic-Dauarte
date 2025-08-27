@@ -1,904 +1,814 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Educação Superior na Era da Inteligência Artificial - Um livro essencial sobre ética e práticas de IA no ensino superior por Vic Duarte">
-    <meta name="keywords" content="IA, educação superior, inteligência artificial, ética, Vic Duarte, livro, patrocínio">
-    <meta name="author" content="Vic Duarte">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seusite.com">
-    <meta property="og:title" content="Educação Superior na Era da Inteligência Artificial - Vic Duarte">
-    <meta property="og:description" content="Reflexões, práticas e caminhos para ensinar e aprender com ética em tempos de IA">
-    <meta property="og:image" content="https://seusite.com/static/images/Vic_Duarte_Logo_Quadrada.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://seusite.com">
-    <meta property="twitter:title" content="Educação Superior na Era da Inteligência Artificial - Vic Duarte">
-    <meta property="twitter:description" content="Reflexões, práticas e caminhos para ensinar e aprender com ética em tempos de IA">
-    <meta property="twitter:image" content="https://seusite.com/static/images/Vic_Duarte_Logo_Quadrada.png">
-    
-    <title>Educação Superior na Era da Inteligência Artificial - Vic Duarte</title>
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./static/images/Vic_Duarte_Logo_Quadrada.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./static/images/Vic_Duarte_Logo_Quadrada.png" sizes="16x16">
-    <link rel="apple-touch-icon" href="./static/images/Vic_Duarte_Logo_Quadrada.png">
-    <link rel="shortcut icon" href="./static/images/Vic_Duarte_Logo_Quadrada.png">
-    
-    <!-- Optimized font loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
-    </noscript>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
-</head>
-<body>
-    <!-- Skip link for keyboard navigation -->
-    <a href="#main-content" class="skip-link visually-hidden-focusable">
-        Pular para o conteúdo principal
-    </a>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Menu principal">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="Vic Duarte - Início">
-                <!-- Logo otimizado -->
-                <img src="./static/images/vic-duarte-logo-dark.png" 
-                     alt="Vic Duarte - Gestão Estratégica e Aprendizagem" 
-                     height="45" 
-                     width="auto" 
-                     class="me-3 navbar-logo"
-                     loading="lazy">
-                <div class="brand-text">
-                    <span class="fw-bold brand-name">Vic Duarte</span>
-                    <span class="brand-subtitle d-none d-sm-inline-block">Educação & IA</span>
-                </div>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu de navegação">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-text d-none d-sm-inline-block ms-2">Menu</span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero">
-                            <i class="fas fa-home me-1 d-lg-none"></i>Livro
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sinopse">
-                            <i class="fas fa-book me-1 d-lg-none"></i>Sinopse
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#autora">
-                            <i class="fas fa-user me-1 d-lg-none"></i>Autora
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#beneficios">
-                            <i class="fas fa-star me-1 d-lg-none"></i>Benefícios
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destaques">
-                            <i class="fas fa-quote-left me-1 d-lg-none"></i>Destaques
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#patrocinio">
-                            <i class="fas fa-handshake me-1 d-lg-none"></i>Patrocínio
-                        </a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-linkedin btn-sm px-4" href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin me-2"></i>LinkedIn
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" aria-labelledby="hero-title">
-            <div class="hero-background"></div>
-            <div class="container">
-                <div class="row align-items-center min-vh-100">
-                    <div class="col-lg-10 mx-auto text-center">
-                        <!-- Book Cover com efeito 3D melhorado -->
-                        <div class="book-cover-container mb-5">
-                            <div class="book-cover">
-                                <div class="book-spine"></div>
-                                <div class="book-content">
-                                    <div class="book-title">
-                                        <h3>Educação Superior na Era da Inteligência Artificial</h3>
-                                    </div>
-                                    <div class="book-subtitle">
-                                        <p>Reflexões, práticas e caminhos para ensinar e aprender com ética</p>
-                                    </div>
-                                    <div class="book-author">
-                                        <span class="author-name">Vic Duarte</span>
-                                    </div>
-                                </div>
-                                <div class="book-glow"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-content">
-                            <h1 class="hero-title mb-4" id="hero-title">
-                                Transforme a Educação com <span class="text-accent-1">Inteligência Artificial</span>
-                            </h1>
-                            <p class="hero-subtitle lead text-white-75 mb-5">
-                                Uma obra fundamental para educadores, instituições e líderes que buscam integrar a IA 
-                                de forma ética e transformadora no ensino superior.
-                            </p>
-                            
-                            <div class="hero-buttons d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                                <a href="#patrocinio" class="btn btn-primary btn-lg px-5 py-3">
-                                    <i class="fas fa-handshake me-2"></i>
-                                    <span class="btn-text">Seja Patrocinador</span>
-                                </a>
-                                <a href="#sinopse" class="btn btn-outline-light btn-lg px-5 py-3">
-                                    <i class="fas fa-book-open me-2"></i>
-                                    <span class="btn-text">Conheça o Livro</span>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <!-- Scroll indicator -->
-                        <div class="scroll-indicator">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Sinopse Section -->
-        <section id="sinopse" class="py-5" aria-labelledby="sinopse-title">
-            <div class="container">
-                <header class="section-header text-center mb-5">
-                    <div class="section-icon mb-3">
-                        <i class="fas fa-book-open text-primary"></i>
-                    </div>
-                    <h2 class="display-5 fw-bold text-primary mb-3" id="sinopse-title">Sinopse</h2>
-                    <p class="lead text-muted col-lg-8 mx-auto">
-                        Uma visão abrangente e crítica sobre a integração da Inteligência Artificial no ensino superior
-                    </p>
-                </header>
-                
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="card border-0 shadow-lg synopsis-card">
-                            <div class="card-body p-4 p-lg-5">
-                                <div class="synopsis-intro mb-4">
-                                    <h3 class="text-primary mb-3">
-                                        <i class="fas fa-robot me-2 text-accent-1"></i>
-                                        Inteligência Artificial e Educação: Um Encontro Inevitável
-                                    </h3>
-                                    <p class="lead text-muted mb-4">
-                                        Este livro posiciona a IA como uma realidade presente e incontornável no contexto da educação superior, 
-                                        com ferramentas como ChatGPT, Copilot, Claude e Gemini já acessíveis e utilizadas por estudantes 
-                                        para diversas finalidades. A obra argumenta que <strong>ignorar ou proibir a IA é uma abordagem anacrônica</strong>, 
-                                        e o foco deve ser como orientar alunos e docentes para um uso ético e produtivo.
-                                    </p>
-                                </div>
-                                
-                                <div class="synopsis-themes">
-                                    <h4 class="text-primary mb-4">
-                                        <i class="fas fa-list-ul me-2 text-accent-1"></i>
-                                        Temas Centrais Explorados
-                                    </h4>
-                                    
-                                    <div class="themes-grid row g-3">
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">01</div>
-                                                <div class="theme-content">
-                                                    <h5>Presença da IA na Educação</h5>
-                                                    <p>Raízes históricas e dados atuais de uso</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">02</div>
-                                                <div class="theme-content">
-                                                    <h5>Desmistificando a IA</h5>
-                                                    <p>Mitos e realidades sobre seu uso educacional</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">03</div>
-                                                <div class="theme-content">
-                                                    <h5>Apoio à Prática Docente</h5>
-                                                    <p>Ferramentas e estratégias para professores</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">04</div>
-                                                <div class="theme-content">
-                                                    <h5>Protagonismo do Aluno</h5>
-                                                    <p>Autonomia e pensamento crítico na era IA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">05</div>
-                                                <div class="theme-content">
-                                                    <h5>Questões Éticas</h5>
-                                                    <p>Autoria, vieses, privacidade e integridade</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">06</div>
-                                                <div class="theme-content">
-                                                    <h5>Identificação de Conteúdo IA</h5>
-                                                    <p>Pistas para detecção e diálogo</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">07</div>
-                                                <div class="theme-content">
-                                                    <h5>Estratégias Éticas</h5>
-                                                    <p>Acordos e práticas para sala de aula</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">08</div>
-                                                <div class="theme-content">
-                                                    <h5>IA e Andragogia</h5>
-                                                    <p>Educação de adultos na era digital</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">09</div>
-                                                <div class="theme-content">
-                                                    <h5>Avaliação em Tempos de IA</h5>
-                                                    <p>Reformulação dos métodos avaliativos</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <div class="theme-item">
-                                                <div class="theme-number">10</div>
-                                                <div class="theme-content">
-                                                    <h5>Futuro da Educação</h5>
-                                                    <p>Ambientes híbridos e personalizados</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="synopsis-conclusion mt-5">
-                                    <div class="alert alert-info border-0 rounded-3 p-4">
-                                        <div class="d-flex align-items-start">
-                                            <i class="fas fa-lightbulb text-accent-1 me-3 mt-1"></i>
-                                            <div>
-                                                <h5 class="alert-heading text-primary mb-2">Reflexão Final</h5>
-                                                <p class="mb-0">
-                                                    Apesar do avanço tecnológico, a <strong>humanidade permanece o elemento insubstituível</strong>. 
-                                                    A educação tem o poder de transformar, ensinando empatia, escuta, cidadania, 
-                                                    imaginação e justiça.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Sobre a Autora Section -->
-        <section id="autora" class="py-5 bg-light" aria-labelledby="autora-title">
-            <div class="container">
-                <header class="section-header text-center mb-5">
-                    <div class="section-icon mb-3">
-                        <i class="fas fa-user-circle text-primary"></i>
-                    </div>
-                    <h2 class="display-5 fw-bold text-primary mb-3" id="autora-title">Sobre a Autora</h2>
-                    <p class="lead text-muted col-lg-8 mx-auto">
-                        Especialista em educação, inovação e liderança ágil
-                    </p>
-                </header>
-                
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="card border-0 shadow-lg author-card">
-                            <div class="card-body p-4 p-lg-5">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 text-center mb-4 mb-md-0">
-                                        <div class="author-photo-container">
-                                            <img src="./static/images/vic-duarte-photo.jpg" 
-                                                 alt="Vic Duarte - Autora do livro Educação Superior na Era da Inteligência Artificial" 
-                                                 class="img-fluid author-photo rounded-circle"
-                                                 loading="lazy">
-                                            <div class="author-photo-border"></div>
-                                        </div>
-                                        
-                                        <!-- Social Links -->
-                                        <div class="author-social mt-4 d-flex justify-content-center gap-3">
-                                            <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" 
-                                               class="social-link" aria-label="LinkedIn">
-                                                <i class="fab fa-linkedin"></i>
-                                            </a>
-                                            <a href="mailto:victoriaduarte.s@gmail.com" 
-                                               class="social-link" aria-label="Email">
-                                                <i class="fas fa-envelope"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-8">
-                                        <div class="author-content">
-                                            <h3 class="text-primary mb-3">Vic Duarte</h3>
-                                            
-                                            <div class="author-bio mb-4">
-                                                <p class="text-muted mb-3">
-                                                    Professora e profissional sênior em metodologias ágeis, com ampla experiência em liderar times, 
-                                                    estruturar processos colaborativos e facilitar mudanças organizacionais com foco em pessoas.
-                                                </p>
-                                                <p class="text-muted mb-3">
-                                                    Atua há mais de meia década em projetos ligados à tecnologia, inovação, marketing, educação 
-                                                    e gestão pública, sempre com um olhar estratégico e humano.
-                                                </p>
-                                            </div>
-                                            
-                                            <div class="author-expertise">
-                                                <h5 class="text-primary mb-3">Áreas de Expertise</h5>
-                                                <div class="expertise-grid row g-2">
-                                                    <div class="col-6">
-                                                        <div class="expertise-item">
-                                                            <i class="fas fa-graduation-cap text-accent-1 me-2"></i>
-                                                            <span>Docência em Graduação e MBA</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="expertise-item">
-                                                            <i class="fas fa-users text-accent-1 me-2"></i>
-                                                            <span>Formação de Lideranças</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="expertise-item">
-                                                            <i class="fas fa-rocket text-accent-1 me-2"></i>
-                                                            <span>Transformação Digital</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="expertise-item">
-                                                            <i class="fas fa-brain text-accent-1 me-2"></i>
-                                                            <span>Educação e IA</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="author-cta mt-4">
-                                                <a href="#patrocinio" class="btn btn-primary btn-sm">
-                                                    <i class="fas fa-handshake me-2"></i>
-                                                    Proposta de Parceria
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Benefícios Section -->
-        <section id="beneficios" class="py-5" aria-labelledby="beneficios-title">
-            <div class="container">
-                <header class="section-header text-center mb-5">
-                    <div class="section-icon mb-3">
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <h2 class="display-5 fw-bold text-primary mb-3" id="beneficios-title">Benefícios para Instituições</h2>
-                    <p class="lead text-muted col-lg-8 mx-auto">
-                        Descubra por que sua instituição deve apoiar este livro transformador
-                    </p>
-                </header>
-                
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <h4 class="benefit-title">Inovação Responsável</h4>
-                        <p class="benefit-description">
-                            Posicione sua instituição como líder na integração ética da IA na educação, 
-                            demonstrando compromisso com a inovação responsável.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Diferenciação Competitiva</span>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <h4 class="benefit-title">Capacitação Docente</h4>
-                        <p class="benefit-description">
-                            Ofereça aos seus professores ferramentas práticas e estratégias comprovadas 
-                            para trabalhar com IA em sala de aula.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Desenvolvimento Profissional</span>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4 class="benefit-title">Ética e Integridade</h4>
-                        <p class="benefit-description">
-                            Estabeleça diretrizes claras para o uso ético da IA, garantindo a integridade 
-                            acadêmica e a proteção de dados.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Governança Digital</span>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4 class="benefit-title">Engajamento Estudantil</h4>
-                        <p class="benefit-description">
-                            Aumente o engajamento dos alunos através de metodologias ativas que 
-                            utilizam a IA como ferramenta de aprendizado.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Experiência de Aprendizagem</span>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4 class="benefit-title">Transformação Digital</h4>
-                        <p class="benefit-description">
-                            Acelere a transformação digital da sua instituição com um framework 
-                            estruturado para a adoção de tecnologias educacionais.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Inovação Sustentável</span>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <h4 class="benefit-title">Reconhecimento</h4>
-                        <p class="benefit-description">
-                            Ganhe visibilidade e reconhecimento no cenário educacional como 
-                            instituição pioneira na educação do futuro.
-                        </p>
-                        <div class="benefit-highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Marca Forte</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Destaques Section -->
-        <section id="destaques" class="py-5 bg-light" aria-labelledby="destaques-title">
-            <div class="container">
-                <header class="section-header text-center mb-5">
-                    <div class="section-icon mb-3">
-                        <i class="fas fa-quote-left text-primary"></i>
-                    </div>
-                    <h2 class="display-5 fw-bold text-primary mb-3" id="destaques-title">Destaques do Livro</h2>
-                    <p class="lead text-muted col-lg-8 mx-auto">
-                        Citações e insights que transformarão sua abordagem educacional
-                    </p>
-                </header>
-                
-                <div class="highlights-grid">
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"Ignorar ou proibir a IA é uma abordagem anacrônica"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                O foco deve ser como orientar alunos e docentes para um uso ético e produtivo 
-                                da inteligência artificial no ambiente educacional.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 1</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"O professor permanece essencial para promover o pensamento crítico"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                A IA é vista como um apoio legítimo para o estudo, mas o diálogo e o afeto 
-                                humanos continuam sendo insubstituíveis.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 2</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"A IA favorece a autonomia e a metacognição"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                Quando bem orientada, a inteligência artificial pode ser uma ferramenta poderosa 
-                                para o protagonismo estudantil e o desenvolvimento crítico.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 3</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"A desigualdade de acesso é um ponto crítico"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                É urgente discutir políticas institucionais que garantam acesso equitativo 
-                                às ferramentas de IA e protejam dados dos usuários.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 4</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"O mais importante é o diálogo e a autorreflexão"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                Mais do que detectar conteúdo gerado por IA, precisamos promover conversas 
-                                significativas sobre o processo de aprendizagem.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 5</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="highlight-card">
-                        <div class="highlight-content">
-                            <blockquote class="highlight-quote">
-                                <p>"A avaliação precisa mudar do produto para o processo"</p>
-                            </blockquote>
-                            <p class="highlight-explanation">
-                                Na era da IA, devemos focar no raciocínio e envolvimento do aluno, 
-                                não apenas no resultado final entregue.
-                            </p>
-                            <div class="highlight-meta">
-                                <span class="chapter-tag">Capítulo 8</span>
-                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Patrocinio Section -->
-        <section id="patrocinio" class="py-5 sponsorship-section" aria-labelledby="patrocinio-title">
-            <div class="sponsorship-background"></div>
-            <div class="container">
-                <div class="sponsorship-content">
-                    <header class="section-header text-center mb-5">
-                        <div class="section-icon mb-3">
-                            <i class="fas fa-handshake text-white"></i>
-                        </div>
-                        <h2 class="display-5 fw-bold text-white mb-3" id="patrocinio-title">Seja Patrocinador</h2>
-                        <p class="lead text-white-75 col-lg-8 mx-auto">
-                            Apoie a publicação deste livro fundamental e posicione sua instituição como 
-                            líder na transformação educacional da era da inteligência artificial
-                        </p>
-                    </header>
-                    
-                    <div class="sponsorship-benefits">
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h4 class="benefit-title">Visibilidade</h4>
-                            <p class="benefit-description">
-                                Seu logo em destaque em todas as mídias e materiais promocionais do livro
-                            </p>
-                        </div>
-                        
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <h4 class="benefit-title">Reconhecimento</h4>
-                            <p class="benefit-description">
-                                Créditos como patrocinador oficial em todas as edições e eventos
-                            </p>
-                        </div>
-                        
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h4 class="benefit-title">Parceria</h4>
-                            <p class="benefit-description">
-                                Colaboração em eventos de lançamento e palestras exclusivas
-                            </p>
-                        </div>
-                        
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <i class="fas fa-book-reader"></i>
-                            </div>
-                            <h4 class="benefit-title">Conteúdo</h4>
-                            <p class="benefit-description">
-                                Acesso antecipado ao conteúdo e materiais complementares exclusivos
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="sponsorship-cta mt-5">
-                        <h3 class="text-white mb-4">Vamos Transformar a Educação Juntos?</h3>
-                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                            <a href="mailto:victoriaduarte.s@gmail.com" class="btn btn-light btn-lg px-5 py-3">
-                                <i class="fas fa-envelope me-2"></i>
-                                <span class="btn-text">Proposta de Patrocínio</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg px-5 py-3">
-                                <i class="fab fa-linkedin me-2"></i>
-                                <span class="btn-text">Conectar no LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="footer-section text-white" role="contentinfo">
-        <div class="footer-background"></div>
-        <div class="container">
-            <div class="footer-content">
-                <div class="row align-items-center py-5">
-                    <div class="col-lg-8">
-                        <div class="footer-text">
-                            <h3 class="footer-title mb-3">Vamos Transformar a Educação Juntos?</h3>
-                            <p class="footer-subtitle lead mb-4">
-                                Seja parte desta revolução educacional e ajude a moldar o futuro 
-                                do ensino superior na era da inteligência artificial.
-                            </p>
-                            <div class="footer-buttons d-flex flex-column flex-sm-row gap-3">
-                                <a href="mailto:victoriaduarte.s@gmail.com" class="btn btn-linkedin">
-                                    <i class="fas fa-envelope me-2"></i>
-                                    Enviar E-mail
-                                </a>
-                                <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
-                                    <i class="fab fa-linkedin me-2"></i>
-                                    Conectar no LinkedIn
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                        <div class="footer-logo-container">
-                            <img src="./static/images/Vic_Duarte_Logo_Quadrada.png" 
-                                 alt="Vic Duarte - Gestão Estratégica e Aprendizagem" 
-                                 class="footer-logo img-fluid"
-                                 loading="lazy">
-                            <p class="footer-logo-text mt-2">
-                                <strong>Vic Duarte</strong><br>
-                                <small>Gestão Estratégica e Aprendizagem</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-bottom">
-                    <hr class="my-4 opacity-25">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <p class="mb-0 text-white-50">
-                                &copy; 2025 Vic Duarte. Todos os direitos reservados.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script>
-        // Navbar scroll effect with enhanced performance
-        let lastScroll = 0;
-        let scrollTimeout;
-        
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            const currentScroll = window.pageYOffset;
-            
-            // Clear previous timeout
-            clearTimeout(scrollTimeout);
-            
-            // Add scrolled class
-            if (currentScroll > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            // Hide/show navbar on scroll direction
-            if (currentScroll > lastScroll && currentScroll > 100) {
-                navbar.style.transform = 'translateY(-100%)';
-            } else {
-                navbar.style.transform = 'translateY(0)';
-            }
-            
-            lastScroll = currentScroll;
-            
-            // Set timeout to remove scroll direction class
-            scrollTimeout = setTimeout(() => {
-                navbar.style.transform = 'translateY(0)';
-            }, 150);
-        }, { passive: true });
-        
-        // Smooth scroll for navigation links with offset
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                    const targetPosition = target.offsetTop - navbarHeight - 20;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        navbarCollapse.classList.remove('show');
-                    }
-                }
-            });
-        });
-        
-        // Add active class to navigation links on scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                
-                if (pageYOffset >= sectionTop - navbarHeight - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-        
-        // Observe all cards and sections
-        document.querySelectorAll('.card, .benefit-item, .highlight-card, .theme-item').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Add loading animation to images
-        document.querySelectorAll('img').forEach(img => {
-            img.addEventListener('load', () => {
-                img.classList.add('loaded');
-            });
-        });
-    </script>
-</body>
-</html>
+	<!DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Educação Superior na Era da Inteligência Artificial - Um livro essencial sobre ética e práticas de IA no ensino superior por Vic Duarte">
+	    <meta name="keywords" content="IA, educação superior, inteligência artificial, ética, Vic Duarte, livro, patrocínio">
+	    <meta name="author" content="Vic Duarte">
+	    <meta name="robots" content="index, follow">
+	    <!-- Open Graph / Facebook -->
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://vicduartchy.github.io/Livro-da-Vic-Dauarte/">
+	    <meta property="og:title" content="Educação Superior na Era da Inteligência Artificial - Vic Duarte">
+	    <meta property="og:description" content="Reflexões, práticas e caminhos para ensinar e aprender com ética em tempos de IA">
+	    <meta property="og:image" content="https://vicduartchy.github.io/Livro-da-Vic-Dauarte/static/images/Vic_Duarte_Logo_Quadrada.png">
+	    <meta property="og:image:width" content="1200">
+	    <meta property="og:image:height" content="630">
+	    <!-- Twitter -->
+	    <meta property="twitter:card" content="summary_large_image">
+	    <meta property="twitter:url" content="https://vicduartchy.github.io/Livro-da-Vic-Dauarte/">
+	    <meta property="twitter:title" content="Educação Superior na Era da Inteligência Artificial - Vic Duarte">
+	    <meta property="twitter:description" content="Reflexões, práticas e caminhos para ensinar e aprender com ética em tempos de IA">
+	    <meta property="twitter:image" content="https://vicduartchy.github.io/Livro-da-Vic-Dauarte/static/images/Vic_Duarte_Logo_Quadrada.png">
+	    <title>Educação Superior na Era da Inteligência Artificial - Vic Duarte</title>
+	    <!-- Preconnect para performance -->
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <!-- Preload critical resources -->
+	    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+	    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+	    <!-- Favicon -->
+	    <link rel="icon" type="image/png" href="./static/images/Vic_Duarte_Logo_Quadrada.png" sizes="32x32">
+	    <link rel="icon" type="image/png" href="./static/images/Vic_Duarte_Logo_Quadrada.png" sizes="16x16">
+	    <link rel="apple-touch-icon" href="./static/images/Vic_Duarte_Logo_Quadrada.png">
+	    <link rel="shortcut icon" href="./static/images/Vic_Duarte_Logo_Quadrada.png">
+	    <!-- Optimized font loading -->
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+	    <noscript>
+	        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+	    </noscript>
+	    <!-- Bootstrap CSS -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Font Awesome -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" href="./static/css/style.css">
+	</head>
+	<body>
+	    <!-- Skip link for keyboard navigation -->
+	    <a href="#main-content" class="skip-link visually-hidden-focusable">
+	        Pular para o conteúdo principal
+	    </a>
+	    <!-- Navigation -->
+	    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Menu principal">
+	        <div class="container">
+	            <a class="navbar-brand d-flex align-items-center" href="#hero" aria-label="Vic Duarte - Início">
+	                <!-- Logo otimizado -->
+	                <img src="./static/images/vic-duarte-logo-dark.png" 
+	                     alt="Vic Duarte - Gestão Estratégica e Aprendizagem" 
+	                     height="45" 
+	                     width="auto" 
+	                     class="me-3 navbar-logo"
+	                     loading="lazy">
+	                <div class="brand-text">
+	                    <span class="fw-bold brand-name">Vic Duarte</span>
+	                    <span class="brand-subtitle d-none d-sm-inline-block">Educação & IA</span>
+	                </div>
+	            </a>
+	            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+	                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu de navegação">
+	                <span class="navbar-toggler-icon"></span>
+	                <span class="navbar-toggler-text d-none d-sm-inline-block ms-2">Menu</span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	                <ul class="navbar-nav ms-auto align-items-lg-center">
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#hero">
+	                            <i class="fas fa-home me-1 d-lg-none"></i>Livro
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#sinopse">
+	                            <i class="fas fa-book me-1 d-lg-none"></i>Sinopse
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#autora">
+	                            <i class="fas fa-user me-1 d-lg-none"></i>Autora
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#beneficios">
+	                            <i class="fas fa-star me-1 d-lg-none"></i>Benefícios
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#destaques">
+	                            <i class="fas fa-quote-left me-1 d-lg-none"></i>Destaques
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="#patrocinio">
+	                            <i class="fas fa-handshake me-1 d-lg-none"></i>Patrocínio
+	                        </a>
+	                    </li>
+	                    <li class="nav-item ms-lg-3">
+	                        <a class="btn btn-linkedin btn-sm px-4" href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer">
+	                            <i class="fab fa-linkedin me-2"></i>LinkedIn
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <main id="main-content">
+	        <!-- Hero Section -->
+	        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+	            <div class="hero-background"></div>
+	            <div class="container">
+	                <div class="row align-items-center min-vh-100">
+	                    <div class="col-lg-10 mx-auto text-center">
+	                        <!-- Book Cover com efeito 3D melhorado -->
+	                        <div class="book-cover-container mb-5">
+	                            <div class="book-cover">
+	                                <div class="book-spine"></div>
+	                                <div class="book-content">
+	                                    <div class="book-title">
+	                                        <h3>Educação Superior na Era da Inteligência Artificial</h3>
+	                                    </div>
+	                                    <div class="book-subtitle">
+	                                        <p>Reflexões, práticas e caminhos para ensinar e aprender com ética</p>
+	                                    </div>
+	                                    <div class="book-author">
+	                                        <span class="author-name">Vic Duarte</span>
+	                                    </div>
+	                                </div>
+	                                <div class="book-glow"></div>
+	                            </div>
+	                        </div>
+	                        <div class="hero-content">
+	                            <h1 class="hero-title mb-4" id="hero-title">
+	                                Transforme a Educação com <span class="text-accent-1">Inteligência Artificial</span>
+	                            </h1>
+	                            <p class="hero-subtitle lead text-white-75 mb-5">
+	                                Uma obra fundamental para educadores, instituições e líderes que buscam integrar a IA 
+	                                de forma ética e transformadora no ensino superior.
+	                            </p>
+	                            <div class="hero-buttons d-flex flex-column flex-sm-row gap-3 justify-content-center">
+	                                <a href="#patrocinio" class="btn btn-primary btn-lg px-5 py-3">
+	                                    <i class="fas fa-handshake me-2"></i>
+	                                    <span class="btn-text">Seja Patrocinador</span>
+	                                </a>
+	                                <a href="#sinopse" class="btn btn-outline-light btn-lg px-5 py-3">
+	                                    <i class="fas fa-book-open me-2"></i>
+	                                    <span class="btn-text">Conheça o Livro</span>
+	                                </a>
+	                            </div>
+	                        </div>
+	                        <!-- Scroll indicator -->
+	                        <div class="scroll-indicator" onclick="document.getElementById('sinopse').scrollIntoView({behavior: 'smooth'})">
+	                            <i class="fas fa-chevron-down"></i>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Sinopse Section -->
+	        <section id="sinopse" class="py-5" aria-labelledby="sinopse-title">
+	            <div class="container">
+	                <header class="section-header text-center mb-5">
+	                    <div class="section-icon mb-3">
+	                        <i class="fas fa-book-open text-primary"></i>
+	                    </div>
+	                    <h2 class="display-5 fw-bold text-primary mb-3" id="sinopse-title">Sinopse</h2>
+	                    <p class="lead text-muted col-lg-8 mx-auto">
+	                        Uma visão abrangente e crítica sobre a integração da Inteligência Artificial no ensino superior
+	                    </p>
+	                </header>
+	                <div class="row">
+	                    <div class="col-lg-10 mx-auto">
+	                        <div class="card border-0 shadow-lg synopsis-card">
+	                            <div class="card-body p-4 p-lg-5">
+	                                <div class="synopsis-intro mb-4">
+	                                    <h3 class="text-primary mb-3">
+	                                        <i class="fas fa-robot me-2 text-accent-1"></i>
+	                                        Inteligência Artificial e Educação: Um Encontro Inevitável
+	                                    </h3>
+	                                    <p class="lead text-muted mb-4">
+	                                        Este livro posiciona a IA como uma realidade presente e incontornável no contexto da educação superior, 
+	                                        com ferramentas como ChatGPT, Copilot, Claude e Gemini já acessíveis e utilizadas por estudantes 
+	                                        para diversas finalidades. A obra argumenta que <strong>ignorar ou proibir a IA é uma abordagem anacrônica</strong>, 
+	                                        e o foco deve ser como orientar alunos e docentes para um uso ético e produtivo.
+	                                    </p>
+	                                </div>
+	                                <div class="synopsis-themes">
+	                                    <h4 class="text-primary mb-4">
+	                                        <i class="fas fa-list-ul me-2 text-accent-1"></i>
+	                                        Temas Centrais Explorados
+	                                    </h4>
+	                                    <div class="themes-grid row g-3">
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">01</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Presença da IA na Educação</h5>
+	                                                    <p>Raízes históricas e dados atuais de uso</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">02</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Desmistificando a IA</h5>
+	                                                    <p>Mitos e realidades sobre seu uso educacional</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">03</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Apoio à Prática Docente</h5>
+	                                                    <p>Ferramentas e estratégias para professores</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">04</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Protagonismo do Aluno</h5>
+	                                                    <p>Autonomia e pensamento crítico na era IA</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">05</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Questões Éticas</h5>
+	                                                    <p>Autoria, vieses, privacidade e integridade</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">06</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Identificação de Conteúdo IA</h5>
+	                                                    <p>Pistas para detecção e diálogo</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">07</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Estratégias Éticas</h5>
+	                                                    <p>Acordos e práticas para sala de aula</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">08</div>
+	                                                <div class="theme-content">
+	                                                    <h5>IA e Andragogia</h5>
+	                                                    <p>Educação de adultos na era digital</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">09</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Avaliação em Tempos de IA</h5>
+	                                                    <p>Reformulação dos métodos avaliativos</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="theme-item">
+	                                                <div class="theme-number">10</div>
+	                                                <div class="theme-content">
+	                                                    <h5>Futuro da Educação</h5>
+	                                                    <p>Ambientes híbridos e personalizados</p>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="synopsis-conclusion mt-5">
+	                                    <div class="alert alert-info border-0 rounded-3 p-4">
+	                                        <div class="d-flex align-items-start">
+	                                            <i class="fas fa-lightbulb text-accent-1 me-3 mt-1"></i>
+	                                            <div>
+	                                                <h5 class="alert-heading text-primary mb-2">Reflexão Final</h5>
+	                                                <p class="mb-0">
+	                                                    Apesar do avanço tecnológico, a <strong>humanidade permanece o elemento insubstituível</strong>. 
+	                                                    A educação tem o poder de transformar, ensinando empatia, escuta, cidadania, 
+	                                                    imaginação e justiça.
+	                                                </p>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Sobre a Autora Section -->
+	        <section id="autora" class="py-5 bg-light" aria-labelledby="autora-title">
+	            <div class="container">
+	                <header class="section-header text-center mb-5">
+	                    <div class="section-icon mb-3">
+	                        <i class="fas fa-user-circle text-primary"></i>
+	                    </div>
+	                    <h2 class="display-5 fw-bold text-primary mb-3" id="autora-title">Sobre a Autora</h2>
+	                    <p class="lead text-muted col-lg-8 mx-auto">
+	                        Especialista em educação, inovação e liderança ágil
+	                    </p>
+	                </header>
+	                <div class="row align-items-center justify-content-center">
+	                    <div class="col-lg-10">
+	                        <div class="card border-0 shadow-lg author-card">
+	                            <div class="card-body p-4 p-lg-5">
+	                                <div class="row align-items-center">
+	                                    <div class="col-md-4 text-center mb-4 mb-md-0">
+	                                        <div class="author-photo-container">
+	                                            <img src="./static/images/vic-duarte-photo.jpg" 
+	                                                 alt="Vic Duarte - Autora do livro Educação Superior na Era da Inteligência Artificial" 
+	                                                 class="img-fluid author-photo rounded-circle"
+	                                                 loading="lazy">
+	                                            <div class="author-photo-border"></div>
+	                                        </div>
+	                                        <!-- Social Links -->
+	                                        <div class="author-social mt-4 d-flex justify-content-center gap-3">
+	                                            <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" 
+	                                               class="social-link" aria-label="LinkedIn">
+	                                                <i class="fab fa-linkedin"></i>
+	                                            </a>
+	                                            <a href="mailto:victoriaduarte.s@gmail.com" 
+	                                               class="social-link" aria-label="Email">
+	                                                <i class="fas fa-envelope"></i>
+	                                            </a>
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-md-8">
+	                                        <div class="author-content">
+	                                            <h3 class="text-primary mb-3">Vic Duarte</h3>
+	                                            <div class="author-bio mb-4">
+	                                                <p class="text-muted mb-3">
+	                                                    Professora e profissional sênior em metodologias ágeis, com ampla experiência em liderar times, 
+	                                                    estruturar processos colaborativos e facilitar mudanças organizacionais com foco em pessoas.
+	                                                </p>
+	                                                <p class="text-muted mb-3">
+	                                                    Atua há mais de meia década em projetos ligados à tecnologia, inovação, marketing, educação 
+	                                                    e gestão pública, sempre com um olhar estratégico e humano.
+	                                                </p>
+	                                            </div>
+	                                            <div class="author-expertise">
+	                                                <h5 class="text-primary mb-3">Áreas de Expertise</h5>
+	                                                <div class="expertise-grid row g-2">
+	                                                    <div class="col-6">
+	                                                        <div class="expertise-item">
+	                                                            <i class="fas fa-graduation-cap text-accent-1 me-2"></i>
+	                                                            <span>Docência em Graduação e MBA</span>
+	                                                        </div>
+	                                                    </div>
+	                                                    <div class="col-6">
+	                                                        <div class="expertise-item">
+	                                                            <i class="fas fa-users text-accent-1 me-2"></i>
+	                                                            <span>Formação de Lideranças</span>
+	                                                        </div>
+	                                                    </div>
+	                                                    <div class="col-6">
+	                                                        <div class="expertise-item">
+	                                                            <i class="fas fa-rocket text-accent-1 me-2"></i>
+	                                                            <span>Transformação Digital</span>
+	                                                        </div>
+	                                                    </div>
+	                                                    <div class="col-6">
+	                                                        <div class="expertise-item">
+	                                                            <i class="fas fa-brain text-accent-1 me-2"></i>
+	                                                            <span>Educação e IA</span>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                            <div class="author-cta mt-4">
+	                                                <a href="#patrocinio" class="btn btn-primary btn-sm">
+	                                                    <i class="fas fa-handshake me-2"></i>
+	                                                    Proposta de Parceria
+	                                                </a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Benefícios Section -->
+	        <section id="beneficios" class="py-5" aria-labelledby="beneficios-title">
+	            <div class="container">
+	                <header class="section-header text-center mb-5">
+	                    <div class="section-icon mb-3">
+	                        <i class="fas fa-star text-primary"></i>
+	                    </div>
+	                    <h2 class="display-5 fw-bold text-primary mb-3" id="beneficios-title">Benefícios para Instituições</h2>
+	                    <p class="lead text-muted col-lg-8 mx-auto">
+	                        Descubra por que sua instituição deve apoiar este livro transformador
+	                    </p>
+	                </header>
+	                <div class="benefits-grid">
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-university"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Inovação Responsável</h4>
+	                        <p class="benefit-description">
+	                            Posicione sua instituição como líder na integração ética da IA na educação, 
+	                            demonstrando compromisso com a inovação responsável.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Diferenciação Competitiva</span>
+	                        </div>
+	                    </div>
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-chalkboard-teacher"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Capacitação Docente</h4>
+	                        <p class="benefit-description">
+	                            Ofereça aos seus professores ferramentas práticas e estratégias comprovadas 
+	                            para trabalhar com IA em sala de aula.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Desenvolvimento Profissional</span>
+	                        </div>
+	                    </div>
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-shield-alt"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Ética e Integridade</h4>
+	                        <p class="benefit-description">
+	                            Estabeleça diretrizes claras para o uso ético da IA, garantindo a integridade 
+	                            acadêmica e a proteção de dados.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Governança Digital</span>
+	                        </div>
+	                    </div>
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-users"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Engajamento Estudantil</h4>
+	                        <p class="benefit-description">
+	                            Aumente o engajamento dos alunos através de metodologias ativas que 
+	                            utilizam a IA como ferramenta de aprendizado.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Experiência de Aprendizagem</span>
+	                        </div>
+	                    </div>
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-chart-line"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Transformação Digital</h4>
+	                        <p class="benefit-description">
+	                            Acelere a transformação digital da sua instituição com um framework 
+	                            estruturado para a adoção de tecnologias educacionais.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Inovação Sustentável</span>
+	                        </div>
+	                    </div>
+	                    <div class="benefit-item">
+	                        <div class="benefit-icon">
+	                            <i class="fas fa-award"></i>
+	                        </div>
+	                        <h4 class="benefit-title">Reconhecimento</h4>
+	                        <p class="benefit-description">
+	                            Ganhe visibilidade e reconhecimento no cenário educacional como 
+	                            instituição pioneira na educação do futuro.
+	                        </p>
+	                        <div class="benefit-highlight">
+	                            <i class="fas fa-check-circle"></i>
+	                            <span>Marca Forte</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Destaques Section -->
+	        <section id="destaques" class="py-5 bg-light" aria-labelledby="destaques-title">
+	            <div class="container">
+	                <header class="section-header text-center mb-5">
+	                    <div class="section-icon mb-3">
+	                        <i class="fas fa-quote-left text-primary"></i>
+	                    </div>
+	                    <h2 class="display-5 fw-bold text-primary mb-3" id="destaques-title">Destaques do Livro</h2>
+	                    <p class="lead text-muted col-lg-8 mx-auto">
+	                        Citações e insights que transformarão sua abordagem educacional
+	                    </p>
+	                </header>
+	                <div class="highlights-grid">
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"Ignorar ou proibir a IA é uma abordagem anacrônica"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                O foco deve ser como orientar alunos e docentes para um uso ético e produtivo 
+	                                da inteligência artificial no ambiente educacional.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 1</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"O professor permanece essencial para promover o pensamento crítico"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                A IA é vista como um apoio legítimo para o estudo, mas o diálogo e o afeto 
+	                                humanos continuam sendo insubstituíveis.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 2</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"A IA favorece a autonomia e a metacognição"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                Quando bem orientada, a inteligência artificial pode ser uma ferramenta poderosa 
+	                                para o protagonismo estudantil e o desenvolvimento crítico.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 3</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"A desigualdade de acesso é um ponto crítico"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                É urgente discutir políticas institucionais que garantam acesso equitativo 
+	                                às ferramentas de IA e protejam dados dos usuários.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 4</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"O mais importante é o diálogo e a autorreflexão"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                Mais do que detectar conteúdo gerado por IA, precisamos promover conversas 
+	                                significativas sobre o processo de aprendizagem.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 5</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                    <article class="highlight-card">
+	                        <div class="highlight-content">
+	                            <blockquote class="highlight-quote">
+	                                <p>"A avaliação precisa mudar do produto para o processo"</p>
+	                            </blockquote>
+	                            <p class="highlight-explanation">
+	                                Na era da IA, devemos focar no raciocínio e envolvimento do aluno, 
+	                                não apenas no resultado final entregue.
+	                            </p>
+	                            <div class="highlight-meta">
+	                                <span class="chapter-tag">Capítulo 8</span>
+	                                <span class="highlight-icon"><i class="fas fa-bookmark"></i></span>
+	                            </div>
+	                        </div>
+	                    </article>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Patrocinio Section -->
+	        <section id="patrocinio" class="py-5 sponsorship-section" aria-labelledby="patrocinio-title">
+	            <div class="sponsorship-background"></div>
+	            <div class="container">
+	                <div class="sponsorship-content">
+	                    <header class="section-header text-center mb-5">
+	                        <div class="section-icon mb-3">
+	                            <i class="fas fa-handshake text-white"></i>
+	                        </div>
+	                        <h2 class="display-5 fw-bold text-white mb-3" id="patrocinio-title">Seja Patrocinador</h2>
+	                        <p class="lead text-white-75 col-lg-8 mx-auto">
+	                            Apoie a publicação deste livro fundamental e posicione sua instituição como 
+	                            líder na transformação educacional da era da inteligência artificial
+	                        </p>
+	                    </header>
+	                    <div class="sponsorship-benefits">
+	                        <div class="benefit-card">
+	                            <div class="benefit-icon">
+	                                <i class="fas fa-eye"></i>
+	                            </div>
+	                            <h4 class="benefit-title">Visibilidade</h4>
+	                            <p class="benefit-description">
+	                                Seu logo em destaque em todas as mídias e materiais promocionais do livro
+	                            </p>
+	                        </div>
+	                        <div class="benefit-card">
+	                            <div class="benefit-icon">
+	                                <i class="fas fa-certificate"></i>
+	                            </div>
+	                            <h4 class="benefit-title">Reconhecimento</h4>
+	                            <p class="benefit-description">
+	                                Créditos como patrocinador oficial em todas as edições e eventos
+	                            </p>
+	                        </div>
+	                        <div class="benefit-card">
+	                            <div class="benefit-icon">
+	                                <i class="fas fa-handshake"></i>
+	                            </div>
+	                            <h4 class="benefit-title">Parceria</h4>
+	                            <p class="benefit-description">
+	                                Colaboração em eventos de lançamento e palestras exclusivas
+	                            </p>
+	                        </div>
+	                        <div class="benefit-card">
+	                            <div class="benefit-icon">
+	                                <i class="fas fa-book-reader"></i>
+	                            </div>
+	                            <h4 class="benefit-title">Conteúdo</h4>
+	                            <p class="benefit-description">
+	                                Acesso antecipado ao conteúdo e materiais complementares exclusivos
+	                            </p>
+	                        </div>
+	                    </div>
+	                    <div class="sponsorship-cta mt-5">
+	                        <h3 class="text-white mb-4">Vamos Transformar a Educação Juntos?</h3>
+	                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+	                            <a href="mailto:victoriaduarte.s@gmail.com" class="btn btn-light btn-lg px-5 py-3">
+	                                <i class="fas fa-envelope me-2"></i>
+	                                <span class="btn-text">Proposta de Patrocínio</span>
+	                            </a>
+	                            <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg px-5 py-3">
+	                                <i class="fab fa-linkedin me-2"></i>
+	                                <span class="btn-text">Conectar no LinkedIn</span>
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	    </main>
+	    <!-- Footer -->
+	    <footer class="footer-section text-white" role="contentinfo">
+	        <div class="footer-background"></div>
+	        <div class="container">
+	            <div class="footer-content">
+	                <div class="row align-items-center py-5">
+	                    <div class="col-lg-8">
+	                        <div class="footer-text">
+	                            <h3 class="footer-title mb-3">Vamos Transformar a Educação Juntos?</h3>
+	                            <p class="footer-subtitle lead mb-4">
+	                                Seja parte desta revolução educacional e ajude a moldar o futuro 
+	                                do ensino superior na era da inteligência artificial.
+	                            </p>
+	                            <div class="footer-buttons d-flex flex-column flex-sm-row gap-3">
+	                                <a href="mailto:victoriaduarte.s@gmail.com" class="btn btn-linkedin">
+	                                    <i class="fas fa-envelope me-2"></i>
+	                                    Enviar E-mail
+	                                </a>
+	                                <a href="https://www.linkedin.com/in/vic-duarte/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+	                                    <i class="fab fa-linkedin me-2"></i>
+	                                    Conectar no LinkedIn
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
+	                        <div class="footer-logo-container">
+	                            <img src="./static/images/Vic_Duarte_Logo_Quadrada.png" 
+	                                 alt="Vic Duarte - Gestão Estratégica e Aprendizagem" 
+	                                 class="footer-logo img-fluid"
+	                                 loading="lazy">
+	                            <p class="footer-logo-text mt-2">
+	                                <strong>Vic Duarte</strong><br>
+	                                <small>Gestão Estratégica e Aprendizagem</small>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="footer-bottom">
+	                    <hr class="my-4 opacity-25">
+	                    <div class="row">
+	                        <div class="col-12 text-center">
+	                            <p class="mb-0 text-white-50">
+	                                &copy; 2025 Vic Duarte. Todos os direitos reservados.
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+	    <!-- Bootstrap JS -->
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	    <!-- Custom JS -->
+	    <script>
+	        // Navbar scroll effect - CORRIGIDO: Menu não desaparece
+	        window.addEventListener('scroll', () => {
+	            const navbar = document.querySelector('.navbar');
+	            const currentScroll = window.pageYOffset;
+	            // Apenas adiciona classe scrolled, não esconde o menu
+	            if (currentScroll > 50) {
+	                navbar.classList.add('scrolled');
+	            } else {
+	                navbar.classList.remove('scrolled');
+	            }
+	        }, { passive: true });
+	        // Smooth scroll com offset correto - CORRIGIDO: Offset de 30px
+	        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	            anchor.addEventListener('click', function (e) {
+	                e.preventDefault();
+	                const target = document.querySelector(this.getAttribute('href'));
+	                if (target) {
+	                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+	                    const targetPosition = target.offsetTop - navbarHeight - 30; // Offset aumentado
+	                    window.scrollTo({
+	                        top: targetPosition,
+	                        behavior: 'smooth'
+	                    });
+	                    // Fecha menu mobile se aberto
+	                    const navbarCollapse = document.querySelector('.navbar-collapse');
+	                    if (navbarCollapse.classList.contains('show')) {
+	                        navbarCollapse.classList.remove('show');
+	                    }
+	                }
+	            });
+	        });
+	        // Add active class to navigation links on scroll
+	        const sections = document.querySelectorAll('section');
+	        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+	        window.addEventListener('scroll', () => {
+	            let current = '';
+	            sections.forEach(section => {
+	                const sectionTop = section.offsetTop;
+	                const sectionHeight = section.clientHeight;
+	                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+	                if (pageYOffset >= sectionTop - navbarHeight - 100) {
+	                    current = section.getAttribute('id');
+	                }
+	            });
+	            navLinks.forEach(link => {
+	                link.classList.remove('active');
+	                if (link.getAttribute('href').slice(1) === current) {
+	                    link.classList.add('active');
+	                }
+	            });
+	        });
+	        // Animate elements on scroll
+	        const observerOptions = {
+	            threshold: 0.1,
+	            rootMargin: '0px 0px -50px 0px'
+	        };
+	        const observer = new IntersectionObserver((entries) => {
+	            entries.forEach(entry => {
+	                if (entry.isIntersecting) {
+	                    entry.target.classList.add('animate-in');
+	                }
+	            });
+	        }, observerOptions);
+	        // Observe all cards and sections
+	        document.querySelectorAll('.card, .benefit-item, .highlight-card, .theme-item').forEach(el => {
+	            observer.observe(el);
+	        });
+	        // Add loading animation to images
+	        document.querySelectorAll('img').forEach(img => {
+	            img.addEventListener('load', () => {
+	                img.classList.add('loaded');
+	            });
+	        });
+	    </script>
+	</body>
+	</html>
